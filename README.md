@@ -10,15 +10,19 @@ Multi-API Practice: Working with both Zoho CRM and Zoho Desk offers experience i
 ## Setup
 1. First, Clone this repository and navigate to the project directory.
 2. Install dependencies:
-``` npm i ``` 
+```bash
+ npm i 
+ ``` 
 3. Set up environment variables:
 Create a .env.local file and add your Zoho OAuth token:
+```bash
 ZOHO_OAUTH_TOKEN=your_actual_zoho_oauth_token_here
 USER_ID=your_actual_zoho_user_id_for_making_records_updates
 ZOHO_OWNER_ID=your_actual_zoho_user_id_for_making_records_updates
 ZOHO_CONTACT_ID=default_contact_id
 ZOHO_RECORD_ID=default_record_id
 ZOHO_RECORD_MODULE=default_module
+```
 
 4. Run the development server
 ```bash
