@@ -5,12 +5,11 @@ export async function POST(request) {
     try {
         const leadData = await request.json();
 
-        // Define the data structure expected by Zoho's API
         const data = {
             data: [
                 {
                     Owner: {
-                        id: "6476341000000486001",
+                        id: process.env.USER_ID,
                     },
                     Last_Name: leadData.lastName || "Doe",
                     First_Name: leadData.firstName || "John",
@@ -41,10 +40,9 @@ export async function POST(request) {
             ],
         };
 
-        // Replace 'YOUR_ACCESS_TOKEN' with a valid Zoho OAuth token
         const response = await axios.post('https://www.zohoapis.com/crm/v2/Leads', data, {
             headers: {
-                Authorization: `Zoho-oauthtoken 1000.66b2c60ed8572e2254ec970bfd9d8494.4e1a3d765ce6e41d808e1cea34200314`,
+                Authorization: process.env.ZOHO_AUTH_TOKEN,
                 "Content-Type": "application/json",
             },
         });

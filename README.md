@@ -1,4 +1,11 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Zoho Micro Dashboard
+
+This simple app, uses zoho CRM APIs to set up a micro CRM where users can create, view, and update tickets and leads
+
+## Benefits of This Project
+Real-World Use: Mimics the workflow in CRM and support teams, giving you hands-on experience with Zoho’s ecosystem.
+Expandable: Can easily be scaled to include more advanced features like automated ticket assignment or lead nurturing.
+Multi-API Practice: Working with both Zoho CRM and Zoho Desk offers experience in managing and integrating multiple APIs.
 
 ## Getting Started
 

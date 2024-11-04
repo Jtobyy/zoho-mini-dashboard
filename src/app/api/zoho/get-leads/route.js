@@ -5,7 +5,7 @@ export async function GET(request) {
     try {
         const response = await axios.get('https://www.zohoapis.com/crm/v2/Leads', {
             headers: {
-                Authorization: `Zoho-oauthtoken 1000.66b2c60ed8572e2254ec970bfd9d8494.4e1a3d765ce6e41d808e1cea34200314`,
+                Authorization: process.env.ZOHO_AUTH_TOKEN,
             },
         });
 
