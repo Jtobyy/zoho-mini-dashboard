@@ -1,16 +1,26 @@
-# Zoho Micro Dashboard
+# Zoho Mini Dashboard
 
-This simple app, uses zoho CRM APIs to set up a micro CRM where users can create, view, and update tickets and leads
+This simple app, uses zoho CRM APIs to set up a mini CRM tool where users can create, view, and update tickets and leads
 
 ## Benefits of This Project
 Real-World Use: Mimics the workflow in CRM and support teams, giving you hands-on experience with Zoho’s ecosystem.
 Expandable: Can easily be scaled to include more advanced features like automated ticket assignment or lead nurturing.
 Multi-API Practice: Working with both Zoho CRM and Zoho Desk offers experience in managing and integrating multiple APIs.
 
-## Getting Started
+## Setup
+1. First, Clone this repository and navigate to the project directory.
+2. Install dependencies:
+``` npm i ``` 
+3. Set up environment variables:
+Create a .env.local file and add your Zoho OAuth token:
+ZOHO_OAUTH_TOKEN=your_actual_zoho_oauth_token_here
+USER_ID=your_actual_zoho_user_id_for_making_records_updates
+ZOHO_OWNER_ID=your_actual_zoho_user_id_for_making_records_updates
+ZOHO_CONTACT_ID=default_contact_id
+ZOHO_RECORD_ID=default_record_id
+ZOHO_RECORD_MODULE=default_module
 
-First, run the development server:
-
+4. Run the development server
 ```bash
 npm run dev
 # or
@@ -22,10 +32,6 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
 ## Learn More
 
